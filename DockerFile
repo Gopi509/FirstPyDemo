@@ -1,0 +1,11 @@
+#Docker file for creating image
+
+WORKID /Arithmetic
+
+COPY . /Arithmetic
+
+RUN apt-get update && apt-get install -y python3 python-pip
+
+ENV NAME Mathmatics
+
+CMD["python3",Arithmetic.py]
